@@ -14,5 +14,4 @@ class Administrador(Usuario):
         for mesero in meseros:
             print(f"{mesero.nombre}: {mesero.propinas}")
 
-    def realizar_funcion(self):
-        print(f"{self.nombre} puede ver mesas y revisar propinas de meseros.")
+   
