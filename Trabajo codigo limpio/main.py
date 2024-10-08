@@ -26,9 +26,9 @@ def main():
     mesero1.mesas_asignadas.append(mesa1)
     mesero2.mesas_asignadas.append(mesa2)
 
-    admin = Administrador("Luis")
+    admin = Administrador("Jhonatancito")
 
-    print("\nMesero Carlos realiza su trabajo:")
+    print(f"\nMesero {mesero_1} realiza su trabajo:")
     gestion_pedidos = GestionPedido()
     pedido1 = gestion_pedidos.crear_pedido()
     pedido1.agregar_producto(cerveza, 2)
@@ -37,7 +37,7 @@ def main():
     mesero1.liquidar_factura(pedido1, 10)
     mesero1.ver_mesas(gestion_mesas)
 
-    print("\nAdministrador Luis realiza su trabajo:")
+    print (f"\nAdministrador {admin} realiza su trabajo:")
     admin.ver_mesas(gestion_mesas)
     admin.ver_propinas_meseros([mesero1, mesero2])
 
