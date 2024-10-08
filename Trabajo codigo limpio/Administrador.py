@@ -1,7 +1,6 @@
 from Usuario import Usuario
  
 class Administrador(Usuario):
-
     def __init__(self, nombre: str) -> None:
         super().__init__(nombre)
 
@@ -13,5 +12,9 @@ class Administrador(Usuario):
         print(f"Propinas de los meseros vistas por {self.nombre}:")
         for mesero in meseros:
             print(f"{mesero.nombre}: {mesero.propinas}")
+
+    def ver_pedidos(self, gestion_pedidos):
+        print(f"{self.nombre} revisa todos los pedidos:")
+        gestion_pedidos.visualizar_pedido()
 
    
